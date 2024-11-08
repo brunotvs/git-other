@@ -1,0 +1,20 @@
+\documentclass{article}
+
+\input{packages}
+
+\title{Título do documento}
+\author{Bruno}
+\loadglsentries{./glossary.tex}
+\addbibresource{./references.bib}
+
+\makeglossaries
+
+\begin{document}
+\maketitle
+\begin{abstract}
+	\input{abstract.tex}
+\end{abstract}
+\glsresetall
+\input{structure.tex}
+\printbibliography
+\end{document}
